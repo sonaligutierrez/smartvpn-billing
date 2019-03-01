@@ -22,7 +22,7 @@ html lang="ru"
                 /! branding/logo
                 = link_to root_path, class: "brand", title: "Home" do
                   h1
-                    img#site_title_image[alt="bemyvpn" src="/assets/logo-app-transp.png", ]
+                    img#site_title_image[alt="bemyvpn" src= asset_url("logo-app-transp.png")]
                 .slogan
                   = "Opensource solution for custom VPN service"
 

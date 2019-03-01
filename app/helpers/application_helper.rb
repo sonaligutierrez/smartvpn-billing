@@ -22,4 +22,8 @@ module ApplicationHelper
       number&.round(2)
     end
   end
+
+  def asset_url(asset)
+    "#{request.protocol}#{request.host_with_port}#{asset_path(asset)}"
+  end
 end
