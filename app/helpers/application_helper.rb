@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+include ActionView::Helpers::AssetUrlHelper
 module ApplicationHelper
   def human_date(date, options = { time: true })
     format = options[:time] ? '%d.%m.%Y %H:%M' : '%d.%m.%Y'
